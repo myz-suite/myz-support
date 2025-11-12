@@ -1,12 +1,23 @@
 name: Feature Request / Idea
-description: Suggest a new feature or improvement for MyZ Annotator
+description: Suggest a new feature or improvement for MyZ Suite
 title: "[Feature]: "
 labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for your interest in improving MyZ Annotator! Please share your ideas and suggestions below.
+        Thanks for your interest in improving MyZ Suite! Please share your ideas and suggestions below.
+  
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      description: Which product you want to help with?
+      options:
+        - MyZ Annotator
+        - MyZ Danmaku
+    validations:
+      required: true
   
   - type: textarea
     id: feature-description
