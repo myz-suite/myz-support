@@ -1,5 +1,5 @@
 name: Bug Report
-description: Report a bug or issue with MyZ Annotator
+description: Report a bug or issue with MyZ Suite
 title: "[Bug]: "
 labels: ["bug"]
 body:
@@ -8,7 +8,18 @@ body:
       value: |
         Thanks for taking the time to report a bug! Please fill out the information below to help us investigate and fix the issue.
   
-  - type: textarea
+  - type: dropdown
+    id: product
+    attributes:
+      label: Affected Product
+      description: In which product did you encounter the bug?
+      options:
+        - MyZ Annotator
+        - MyZ Danmaku
+    validations:
+      required: true
+
+    - type: textarea
     id: description
     attributes:
       label: Bug Description
